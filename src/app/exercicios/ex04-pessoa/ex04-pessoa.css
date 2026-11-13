@@ -1,0 +1,23 @@
+/* Layout: 2 blocos de pessoa lado a lado com Flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  flex-wrap: wrap;
+
+  max-width: 99%;
+  margin: auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Cada bloco de pessoa */
+.pessoa {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  width: auto;
+  min-width: 40%;
+  box-sizing: border-box;
+}
