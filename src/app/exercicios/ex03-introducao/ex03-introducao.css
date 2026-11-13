@@ -1,0 +1,21 @@
+/* Estilo simples - centralizado com fundo claro */
+.introducao {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.introducao p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.introducao p:first-of-type {
+  font-size: 1.2rem;
+  color: #333;
+}
