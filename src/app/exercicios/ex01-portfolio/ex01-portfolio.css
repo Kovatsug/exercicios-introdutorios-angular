@@ -1,0 +1,10 @@
+/* Componente principal - margin zero e fonte simples */
+::ng-content {
+  /* O conteúdo é inserido via template do angular */
+}
+
+/* Define fonte e margin para o componente raiz */
+app-ex01-portfolio {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
