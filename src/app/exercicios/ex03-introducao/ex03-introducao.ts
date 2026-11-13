@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Ex03Introducao {
   // Dados de apresentação - valores de exemplo
-  nome = 'Seu Nome';
-  idade = 25;
-  cidade = 'Sua Cidade';
-  profissao = 'Estudante de Desenvolvimento de Sistemas';
+  nome = 'Gustavo';
+  idade = 18;
+  cidade = 'Blumenau';
+  profissao = 'Estudante de Java + Angular';
   hobby = 'Programar';
 }
