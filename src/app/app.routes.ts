@@ -9,6 +9,7 @@ import { Ex06Contador } from './exercicios/ex06-contador/ex06-contador';
 import { Ex07Autenticacao } from './exercicios/ex07-autenticacao/ex07-autenticacao';
 import { Ex08Imagem } from './exercicios/ex08-imagem/ex08-imagem';
 import { Ex09Nomes } from './exercicios/ex09-nomes/ex09-nomes';
+import { NaoEncontrado } from './nao-encontrado/nao-encontrado';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -21,4 +22,5 @@ export const routes: Routes = [
   { path: 'ex07', component: Ex07Autenticacao },
   { path: 'ex08', component: Ex08Imagem },
   { path: 'ex09', component: Ex09Nomes },
+  { path: '**', component: NaoEncontrado },
 ];

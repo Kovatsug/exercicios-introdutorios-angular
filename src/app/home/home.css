@@ -1,0 +1,37 @@
+/* Estilo simples para a página home */
+h1 {
+  color: #0066aa;
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  margin: 1rem auto;
+  max-width: 800px;
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+}
+
+ul {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+ul a {
+  color: #0066aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul a:hover {
+  color: #005599;
+}
