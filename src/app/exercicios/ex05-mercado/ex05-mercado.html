@@ -1,1 +1,35 @@
-<p>ex05-mercado works!</p>
+<!-- Exibição de 3 unidades de mercado usando apenas interpolação {{ }} -->
+<div class="container">
+  <!-- Bloco para unidade De Blumenau -->
+  <div class="mercado">
+    <h3>Blumenau</h3>
+    <p>Maçãs vendidas por ano: {{ unidadeDeBlumenau.macasVendidasAno }} UN</p>
+    <p>Preço da maçã: R$ {{ unidadeDeBlumenau.precoMaca }}</p>
+    <p>Total maçã: R$ {{ unidadeDeBlumenau.precoMaca * unidadeDeBlumenau.macasVendidasAno }}</p>
+    <p>Laranjas vendidas por ano: {{ unidadeDeBlumenau.laranjasVendidasAno }} UN</p>
+    <p>Preço da laranja: R$ {{ unidadeDeBlumenau.precoLaranja }}</p>
+    <p>Total laranja: R$ {{ unidadeDeBlumenau.precoLaranja * unidadeDeBlumenau.laranjasVendidasAno }}</p>
+  </div>
+
+  <!-- Bloco para unidade De Joinville -->
+  <div class="mercado">
+    <h3>Joinville</h3>
+    <p>Maçãs vendidas por ano: {{ unidadeDeJoinville.macasVendidasAno }} UN</p>
+    <p>Preço da maçã: R$ {{ unidadeDeJoinville.precoMaca }}</p>
+    <p>Total maçã: R$ {{ unidadeDeJoinville.precoMaca * unidadeDeJoinville.macasVendidasAno }}</p>
+    <p>Laranjas vendidas por ano: {{ unidadeDeJoinville.laranjasVendidasAno }} UN</p>
+    <p>Preço da laranja: R$ {{ unidadeDeJoinville.precoLaranja }}</p>
+    <p>Total laranja: R$ {{ unidadeDeJoinville.precoLaranja * unidadeDeJoinville.laranjasVendidasAno }}</p>
+  </div>
+
+  <!-- Bloco para unidade De Florianópolis -->
+  <div class="mercado">
+    <h3>Florianópolis</h3>
+    <p>Maçãs vendidas por ano: {{ unidadeDeFlorianopolis.macasVendidasAno }} UN</p>
+    <p>Preço da maçã: R$ {{ unidadeDeFlorianopolis.precoMaca }}</p>
+    <p>Total maçã: R$ {{ unidadeDeFlorianopolis.precoMaca * unidadeDeFlorianopolis.macasVendidasAno }}</p>
+    <p>Laranjas vendidas por ano: {{ unidadeDeFlorianopolis.laranjasVendidasAno }} UN</p>
+    <p>Preço da laranja: R$ {{ unidadeDeFlorianopolis.precoLaranja }} </p>
+    <p>Total laranja: R$ {{ unidadeDeFlorianopolis.precoLaranja * unidadeDeFlorianopolis.laranjasVendidasAno }}</p>
+  </div>
+</div>

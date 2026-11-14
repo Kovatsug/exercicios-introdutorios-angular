@@ -1,0 +1,32 @@
+/* Container geral */
+.container {
+  max-width: 99%;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+}
+
+/* Cada mercado */
+.mercado {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+
+  flex: 1 1 220px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .mercados-container {
+    flex-direction: column;
+  }
+}
