@@ -1,0 +1,19 @@
+/* Rodapé - estilo igual ao cabeçalho, mas mais baixo */
+:host {
+  display: block;
+  background-color: #0066aa;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.75rem 0;
+  border: 3px solid #ff0000;
+  height: 45px;
+}
+
+/* Centraliza vertical e horizontalmente */
+:host(:defined) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

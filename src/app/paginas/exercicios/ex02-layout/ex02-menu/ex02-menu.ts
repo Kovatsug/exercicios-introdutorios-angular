@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './ex02-menu.css',
   templateUrl: './ex02-menu.html',
 })
-export class Ex02Menu {}
+export class Ex02Menu {
+  // :host { display: flex } definido no CSS
+}

@@ -1,0 +1,60 @@
+/* Layout principal do ex02 - página com header, menu e conteúdo */
+.pagina {
+  background-color: #cdf0ff;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 80vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Área do meio - contém menu à esquerda e conteúdo à direita */
+.meio {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+/* ========================
+   LAYOUT DESKTOP (mais de 600px)
+   ======================== */
+@media (min-width: 601px) {
+  .meio {
+    flex-direction: row;
+  }
+  
+  /* Menu à esquerda - largura fixa ~110px */
+  .meio > :first-child {
+    flex: 0 0 110px;
+    align-self: stretch;
+  }
+  
+  /* Conteúdo à direita - ocupa o resto */
+  .meio > :last-child {
+    flex: 1;
+  }
+}
+
+/* ========================
+   LAYOUT MOBILE (600px ou menos)
+   ======================== */
+@media (max-width: 600px) {
+  .meio {
+    flex-direction: column;
+  }
+  
+  /* Menu: largura total, altura automática, texto centralizado */
+  .meio > :first-child {
+    width: 100%;
+    flex: 0 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Conteúdo: largura mínima de 200px, ocupa o restante */
+  .meio > :last-child {
+    flex: 1;
+    min-width: 200px;
+  }
+}

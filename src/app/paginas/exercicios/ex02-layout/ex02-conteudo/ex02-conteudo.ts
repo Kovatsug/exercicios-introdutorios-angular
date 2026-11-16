@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './ex02-conteudo.css',
   templateUrl: './ex02-conteudo.html',
 })
-export class Ex02Conteudo {}
+export class Ex02Conteudo {
+  // :host { display: block } definido no CSS
+}

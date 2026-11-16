@@ -1,0 +1,19 @@
+/* Cabeçalho - fundo azul escuro, texto branco, centralizado */
+:host {
+  display: block;
+  background-color: #0066aa;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem 0;
+  border: 3px solid #ff0000;
+  height: 90px;
+}
+
+/* Centraliza vertical e horizontalmente o conteúdo */
+:host(:defined) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

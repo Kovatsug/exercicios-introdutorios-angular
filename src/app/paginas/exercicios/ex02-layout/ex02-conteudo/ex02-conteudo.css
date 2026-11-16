@@ -1,0 +1,46 @@
+/* Conteúdo - fundo branco, texto preto, borda azul escuro no desktop */
+:host {
+  display: block;
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #0066aa;
+  padding: 0.75rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+:host h2,
+:host h3 {
+  color: #000000;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Rótulo "Cores:" - fonte pequena */
+:host .rotulo {
+  font-size: 0.8rem;
+  color: #000000;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/
+:host ul {
+  font-size: 0.75rem;
+  color: #000000;
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0 0;
+}
+
+:host li {
+  margin: 0.1rem 0;
+}
+
+/* Media query - mobile: mudar borda para preta */
+@media (max-width: 600px) {
+  :host {
+    border: 3px solid #000000;
+  }
+}

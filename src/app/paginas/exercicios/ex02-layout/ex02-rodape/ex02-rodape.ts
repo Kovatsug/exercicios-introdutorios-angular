@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './ex02-rodape.css',
   templateUrl: './ex02-rodape.html',
 })
-export class Ex02Rodape {}
+export class Ex02Rodape {
+  // :host { display: block } definido no CSS
+}

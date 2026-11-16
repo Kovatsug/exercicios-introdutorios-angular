@@ -1,0 +1,15 @@
+/* Menu - fundo azul escuro, texto branco, com borda vermelha */
+:host {
+  display: flex;
+  background-color: #0066aa;
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid #ff0000;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* No modo desktop (dentro do .meio), o texto pode quebrar em 2 linhas */
+/* Como o menu tem largura fixa ~110px, o texto "Menu de navegação" ocupa 2 linhas */
