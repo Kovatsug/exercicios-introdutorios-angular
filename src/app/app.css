@@ -1,0 +1,82 @@
+/* Layout geral - Flexbox vertical em telas normais */
+:host {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Menu lateral - fixo na lateral esquerda */
+.menu {
+  width: 180px;
+  background-color: #0066aa;
+  color: #fff;
+  padding: 1rem;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.menu span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #e0f0ff;
+  font-weight: bold;
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  background-color: #005599;
+}
+
+.menu a.ativo {
+  background-color: #005599;
+  font-weight: bold;
+}
+
+/* Área de conteúdo - ocupa o resto do espaço */
+.conteudo {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Responsividade - em telas pequenas, vira coluna */
+@media (max-width: 600px) {
+  :host {
+    flex-direction: column;
+  }
+  
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: #0066aa;
+  }
+  
+  .menu span {
+    margin: 0.25rem 0.5rem 0 0;
+    font-size: 0.7rem;
+  }
+  
+  .menu a {
+    margin: 0.1rem 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+  .conteudo {
+    order: 1;
+    width: 100%;
+  }
+}
