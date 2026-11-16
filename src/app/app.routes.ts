@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
-import { Home } from './home/home';
-import { Ex01Portfolio } from './exercicios/ex01-portfolio/ex01-portfolio';
-import { Ex02Layout } from './exercicios/ex02-layout/ex02-layout';
-import { Ex03Introducao } from './exercicios/ex03-introducao/ex03-introducao';
-import { Ex04Pessoa } from './exercicios/ex04-pessoa/ex04-pessoa';
-import { Ex05Mercado } from './exercicios/ex05-mercado/ex05-mercado';
-import { Ex06Contador } from './exercicios/ex06-contador/ex06-contador';
-import { Ex07Autenticacao } from './exercicios/ex07-autenticacao/ex07-autenticacao';
-import { Ex08Imagem } from './exercicios/ex08-imagem/ex08-imagem';
-import { Ex09Nomes } from './exercicios/ex09-nomes/ex09-nomes';
-import { NaoEncontrado } from './nao-encontrado/nao-encontrado';
+import { Home } from './paginas/home/home';
+import { Ex01Portfolio } from './paginas/exercicios/ex01-portfolio/ex01-portfolio';
+import { Ex02Layout } from './paginas/exercicios/ex02-layout/ex02-layout';
+import { Ex03Introducao } from './paginas/exercicios/ex03-introducao/ex03-introducao';
+import { Ex04Pessoa } from './paginas/exercicios/ex04-pessoa/ex04-pessoa';
+import { Ex05Mercado } from './paginas/exercicios/ex05-mercado/ex05-mercado';
+import { Ex06Contador } from './paginas/exercicios/ex06-contador/ex06-contador';
+import { Ex07Autenticacao } from './paginas/exercicios/ex07-autenticacao/ex07-autenticacao';
+import { Ex08Imagem } from './paginas/exercicios/ex08-imagem/ex08-imagem';
+import { Ex09Nomes } from './paginas/exercicios/ex09-nomes/ex09-nomes';
+import { NaoEncontrado } from './paginas/nao-encontrado/nao-encontrado';
 
 export const routes: Routes = [
   { path: '', component: Home },
