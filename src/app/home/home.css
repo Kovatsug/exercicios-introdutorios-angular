@@ -1,37 +1,117 @@
-/* Estilo simples para a página home */
-h1 {
-  color: #0066aa;
-  margin-top: 0;
-  font-size: 2rem;
+/* --- FAIXA CABEçalHO (banner) --- */
+.banner {
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
 }
 
-p {
-  margin: 1rem auto;
-  max-width: 800px;
-  text-align: center;
-  color: #555;
-  line-height: 1.6;
-}
-
-ul {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0;
-  list-style: none;
-}
-
-ul li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-}
-
-ul a {
-  color: #0066aa;
-  text-decoration: none;
+.banner-titulo {
+  margin: 0;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
-ul a:hover {
-  color: #005599;
+.banner-subtitulo {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* --- CARD DE APRESENTAÇÃO --- */
+.apresentacao-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* --- GRADE DE CARDS DOS EXERCÍCIOS --- */
+.grade-exercicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.card-ex {
+  flex: 1 1 240px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 120px;
+}
+
+.card-ex:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Etiqueta do número do exercício */
+.card-ex-numero {
+  display: inline-block;
+  background-color: #0066aa;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  align-self: start;
+}
+
+/* Título do exercício */
+.card-ex-titulo {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* --- RESPONSIVIDADE: telas <= 600px --- */
+@media (max-width: 600px) {
+  .banner {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .banner-titulo {
+    font-size: 1.5rem;
+  }
+  
+  .apresentacao-card {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .grade-exercicios {
+    padding: 0.5rem 0;
+  }
+  
+  .card-ex {
+    padding: 1rem;
+    min-height: 100px;
+  }
+  
+  .card-ex-numero {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+  }
+  
+  .card-ex-titulo {
+    font-size: 0.9rem;
+  }
 }
