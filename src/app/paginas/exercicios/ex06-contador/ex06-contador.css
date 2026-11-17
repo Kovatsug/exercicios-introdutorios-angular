@@ -1,0 +1,99 @@
+/* Centraliza o card na tela */
+:host {
+    display: block;
+}
+
+.contador-pagina {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 360px;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    margin: 0 0 1rem 0;
+    color: #222;
+}
+
+/* Número do contador (clicável para zerar) */
+.numero {
+    display: inline-block;
+    min-width: 120px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0066aa;
+    background-color: #ffffff;
+    border: 2px solid #0066aa;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    /* evita selecionar o texto ao clicar várias vezes */
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.numero:hover {
+    background-color: #cdf0ff;
+}
+
+.numero:active {
+    transform: scale(0.95);
+}
+
+
+/* Botão Incrementar */
+.botao {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0066aa;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.botao:hover {
+    background-color: #004f85;
+}
+
+.botao:active {
+    transform: scale(0.97);
+}
+
+.botao:focus-visible,
+.numero:focus-visible {
+    outline: 2px solid #0066aa;
+    outline-offset: 2px;
+}
+
+/* Telas pequenas */
+@media (max-width: 600px) {
+    .contador-pagina {
+        padding: 1rem 0.5rem;
+    }
+
+    .numero {
+        font-size: 2.5rem;
+    }
+
+    .botao {
+        width: 100%;
+    }
+}
