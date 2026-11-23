@@ -1,1 +1,12 @@
-<p>ex08-imagem works!</p>
+<div class="pagina">
+  <div class="card">
+    <h2>Visualizador de imagem</h2>
+    <label for="campo-url">URL da imagem:</label>
+    <input id="campo-url" type="text" placeholder="Cole aqui o endereço da imagem" [(ngModel)]="url" (ngModelChange)="mudouUrl()">
+    <div class="area-imagem">
+      <img [src]="url" alt="Imagem informada pelo usuário" [hidden]="!url || erro" (load)="imagemCarregou()" (error)="imagemFalhou()">
+      <p class="mensagem" [hidden]="url !== ''">Digite uma URL para ver a imagem.</p>
+      <p class="mensagem erro" [hidden]="!erro">Não foi possível carregar a imagem. Verifique a URL.</p>
+    </div>
+  </div>
+</div>
