@@ -11,6 +11,7 @@ export class Ex08Imagem {
   // Atributos
   url: string = '';
   erro: boolean = false;
+  jogo: string = ''
 
   // Método chamado quando a imagem carrega com sucesso
   imagemCarregou(): void {
