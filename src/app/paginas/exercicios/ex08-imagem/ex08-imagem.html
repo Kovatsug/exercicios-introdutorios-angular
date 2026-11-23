@@ -10,19 +10,24 @@
       <p class="mensagem" [hidden]="url !== ''">Digite uma URL para ver a imagem.</p>
       <p class="mensagem erro" [hidden]="!erro">Não foi possível carregar a imagem. Verifique a URL.</p>
     </div>
-    <div class="card">
-      <h2>Jogos</h2>
-      <label for="campo-url">Nome do Jogo:</label>
-      <input id="campo-url" type="text" placeholder="Nome do Jogo aqui" [(ngModel)]="jogo">
-      <div class="area-imagem">
-        @if (jogo.trim().toUpperCase() == 'MINECRAFT') {
-          <img src="https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png" alt="asd">
-        }@else if (jogo.trim().toUpperCase() == 'SENAI') {
-          <img src="https://sc.ead.senai.br/pluginfile.php/1/theme_sctec/logocompact/300x300/1795021285/sketch%281%29.png" alt="">
-        }@else if (jogo.trim().toUpperCase() == 'GTA') {
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrPTndexd3tQBEahjKaLzZlVqA_7Tyg6xPSEeu92dyllEOAJ6u_Bkukw&s=10" alt="">
-        } @else { <p>Minecraft, senai, gta</p> }
-      </div>
+  </div>
+  <div class="card">
+    <h2>Jogos</h2>
+    <label for="campo-url">Nome do Jogo:</label>
+    <input id="campo-url" type="text" placeholder="Nome do Jogo aqui" [(ngModel)]="jogo">
+    <div class="area-imagem">
+      @if (jogo.trim().toUpperCase() == 'MINECRAFT') {
+      <img
+        src="https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
+        alt="asd">
+      }@else if (jogo.trim().toUpperCase() == 'SENAI') {
+      <img src="https://sc.ead.senai.br/pluginfile.php/1/theme_sctec/logocompact/300x300/1795021285/sketch%281%29.png"
+        alt="">
+      }@else if (jogo.trim().toUpperCase() == 'GTA') {
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrPTndexd3tQBEahjKaLzZlVqA_7Tyg6xPSEeu92dyllEOAJ6u_Bkukw&s=10"
+        alt="">
+      } @else { <p>Minecraft, senai, gta</p> }
     </div>
   </div>
 </div>

@@ -8,8 +8,8 @@ import { Mercado } from './mercado';
   templateUrl: './ex05-mercado.html',
 })
 export class Ex05Mercado {
-  // 3 unidades com valores de exemplo diferentes
-  unidadeDeBlumenau: Mercado = {
+  // Atributos privados
+  private unidadeDeBlumenau: Mercado = {
     nome: 'Mercado Blumenau',
     macasVendidasAno: 15000,
     precoMaca: 3.50,
@@ -17,7 +17,7 @@ export class Ex05Mercado {
     precoLaranja: 4.20,
   };
 
-  unidadeDeJoinville: Mercado = {
+  private unidadeDeJoinville: Mercado = {
     nome: 'Mercado Joinville',
     macasVendidasAno: 12000,
     precoMaca: 3.80,
@@ -25,7 +25,7 @@ export class Ex05Mercado {
     precoLaranja: 4.50,
   };
 
-  unidadeDeFlorianopolis: Mercado = {
+  private unidadeDeFlorianopolis: Mercado = {
     nome: 'Mercado Florianópolis',
     macasVendidasAno: 18000,
     precoMaca: 3.20,

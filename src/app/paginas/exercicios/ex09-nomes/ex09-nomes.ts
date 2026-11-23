@@ -8,12 +8,12 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './ex09-nomes.html',
 })
 export class Ex09Nomes {
-  // Atributos
-  nome: string = '';
-  nomes: string[] = [];
+  // Atributos privados
+  private nome: string = '';
+  private nomes: string[] = [];
 
   // Método para adicionar nome
-  adicionar(): void {
+  private adicionar(): void {
     const nomeLimpo = this.nome.trim();
     if (nomeLimpo === '') {
       return; // não cadastra nome vazio

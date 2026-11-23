@@ -8,10 +8,10 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './ex08-imagem.html',
 })
 export class Ex08Imagem {
-  // Atributos
-  url: string = '';
-  erro: boolean = false;
-  jogo: string = ''
+  // Atributos privados
+  private url: string = '';
+  private erro: boolean = false;
+  private jogo: string = '';
 
   // Método chamado quando a imagem carrega com sucesso
   imagemCarregou(): void {

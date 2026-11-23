@@ -8,15 +8,15 @@ import { Pessoa } from './pessoa';
   templateUrl: './ex04-pessoa.html',
 })
 export class Ex04Pessoa {
-  // Atributos do tipo Pessoa com valores de exemplo
-  pessoa1: Pessoa = {
+  // Atributos privados
+  private pessoa1: Pessoa = {
     nome: 'Isabelly',
     sexo: 'Feminino',
     dataNascimento: '09/03/2009',
     estadoCivil: 'Casada',
   };
 
-  pessoa2: Pessoa = {
+  private pessoa2: Pessoa = {
     nome: 'Maximiliano',
     sexo: 'Masculino',
     dataNascimento: '22/07/2032',

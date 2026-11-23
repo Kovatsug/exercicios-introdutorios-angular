@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './ex03-introducao.html',
 })
 export class Ex03Introducao {
-  // Dados de apresentação - valores de exemplo
-  nome = 'Gustavo';
-  idade = 18;
-  cidade = 'Blumenau';
-  profissao = 'Estudante de Java + Angular';
-  hobby = 'Programar';
+  // Atributos privados
+  private nome = 'Gustavo';
+  private idade = 18;
+  private cidade = 'Blumenau';
+  private profissao = 'Estudante de Java + Angular';
+  private hobby = 'Programar';
 }
