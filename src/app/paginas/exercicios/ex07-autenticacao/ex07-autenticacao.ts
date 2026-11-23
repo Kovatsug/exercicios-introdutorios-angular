@@ -1,22 +1,16 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [FormsModule],
   selector: 'app-ex07-autenticacao',
   styleUrl: './ex07-autenticacao.css',
   templateUrl: './ex07-autenticacao.html',
 })
 export class Ex07Autenticacao {
+  // Único estado do componente: true = logado, false = deslogado
+  logado = false;
 
-  logado = false
-  estado = "Deslogado"
-  logar = "Logar"
-
-  logarDeslogar() {
-    this.logado = !this.logado
-    this.estado = this.logado ? "Logado" : "Deslogado"
-    this.logar = this.logado ? "Deslogar" : "Logar"
+  // Inverte o estado ao clicar no botão
+  alternarLogin() {
+    this.logado = !this.logado;
   }
-
 }

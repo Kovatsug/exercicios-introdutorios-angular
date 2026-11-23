@@ -1,2 +1,11 @@
-<p>o usuario esta {{estado}}</p>
-<button (click)="logarDeslogar()">{{logar}}</button>
+<div class="pagina">
+  <div class="card">
+    <h2>Autenticação</h2>
+    <p class="status" [class.logado]="logado">
+      O usuário está {{ logado ? 'logado' : 'deslogado' }}
+    </p>
+    <button (click)="alternarLogin()">
+      {{ logado ? 'Deslogar' : 'Logar' }}
+    </button>
+  </div>
+</div>
